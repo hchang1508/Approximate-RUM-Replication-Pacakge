@@ -1,0 +1,42 @@
+% Generated 2026-08-16
+\begin{table}[ht]
+\caption{In-Sample Fit}
+\begin{center}
+\scalebox{0.85}{
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \multirow{2}{*}{Model } &\multicolumn{4}{c|}{Choice probabilities}&\multicolumn{1}{c|}{Prediction error} \\ \cline{2-6}
+ & Beach  & Boat    & Charter  & Pier & \\
+   &  (1) &  (2) & (3) & (4) & (5)\\
+  \hline
+Our method & 0.113 & 0.352 & 0.382 & 0.150 & 0.000 \\
+ & (0.008) & (0.014) & (0.016) & (0.010) & (0.000) \\
+\hline
+Multinomial logit & 0.141 & 0.354 & 0.378 & 0.125 & 0.037 \\
+ & (0.007) & (0.014) & (0.016) & (0.007) & (0.009) \\
+\hline
+Nested logit & 0.113 & 0.352 & 0.382 & 0.150 & 0.000 \\
+(charter and others) & (0.009) & (0.014) & (0.016) & (0.011) & (0.001) \\
+\hline
+Nested logit & 0.141 & 0.354 & 0.378 & 0.125 & 0.037 \\
+(boat and others) & (0.007) & (0.014) & (0.016) & (0.007) & (0.009) \\
+\hline
+Mixed-logit with & 0.141 & 0.354 & 0.378 & 0.125 & 0.038 \\
+log normal distribution & (0.007) & (0.014) & (0.016) & (0.007) & (0.009) \\
+\hline
+Multinomial logit & 0.113 & 0.352 & 0.382 & 0.150 & 0.000 \\
+with fixed effects & (0.008) & (0.014) & (0.016) & (0.010) & (0.000) \\
+\hline
+Mixed-logit with log normal & 0.113 & 0.352 & 0.382 & 0.150 & 0.000 \\
+distribution and fixed effects & (0.008) & (0.014) & (0.016) & (0.010) & (0.000) \\
+\hline
+\end{tabular}
+}
+\end{center}
+\label{tbl:in-sample_d1}
+\begin{tablenotes}
+\item \begin{scriptsize} \textit{Note}:
+Table \ref{tbl:in-sample_d1} summarizes the in-sample fit of different models. The row ``our method'' presents choice probabilities predicted by the four-mixture mixed-logit model and the prediction error. The remaining rows present in-sample predicted choice probabilities and prediction errors obtained by standard models. In parentheses are standard deviations obtained by repeating the same analyses 50 times. All numbers are truncated to three decimal places.
+\end{scriptsize}
+\end{tablenotes}
+\end{table}

@@ -1,0 +1,16 @@
+# SLURM logs are never tracked.
+*/*/output/logs/
+
+# Per-task greedy/EM artefacts live on scratch, not here. The exception is
+# fish/tbl_in_sample_d1/output/raw/, which holds the per-split results both fit
+# tables are collected from.
+*/*/output/raw/
+*/*/output/raw_*/
+!fish/tbl_in_sample_d1/output/raw/
+
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+Rplots.pdf
+.DS_Store

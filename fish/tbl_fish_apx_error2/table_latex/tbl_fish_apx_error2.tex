@@ -1,0 +1,28 @@
+% Generated 2026-08-18
+\begin{table}[ht]
+\caption{Approximation errors to random utility models $\frac{1}{2}\rho^{\pi}+\frac{1}{2}\rho^{\pi^-}$}\label{tbl:fish_apx_error2}
+\begin{center}
+\scalebox{0.9}{
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Ranking $\pi$ } &\multicolumn{2}{c|}{Linear mixed-logit}&\multicolumn{2}{c|}{Quadratic mixed-logit} \\ \cline{2-5}
+ & Greedy  & EM    & Greedy  & EM \\ 
+   &  (1) &  (2) &(3) &(4) \\  
+\hline
+Linearly unrepresentable rankings &&&&\\
+$\pi(1)> \pi(2)> \pi(3)> \pi(4)$ &0.229&0.254& {0.000} & {0.000} \\
+$\pi(1)> \pi(2)> \pi(4)> \pi(3)$ &0.228&0.250& {0.000} & {0.000} \\
+$\pi(1)> \pi(3)> \pi(2)> \pi(4)$ &0.163&0.218& {0.000} & {0.000} \\
+$\pi(1)> \pi(4)> \pi(2)> \pi(3)$ &0.161&0.172& {0.000} & {0.000} \\
+$\pi(2)> \pi(1)> \pi(3)> \pi(4)$ &0.192&0.240& {0.000} & {0.000} \\
+$\pi(2)> \pi(1)> \pi(4)> \pi(3)$ &0.192&0.198& {0.000} & {0.000} \\
+\hline
+Linearly representable rankings & 0.000 & 0.000 & {0.000}& {0.000}\\
+\hline
+\end{tabular}
+}
+\end{center}
+\begin{scriptsize}
+\textit{Note:} The numbers in the table show the approximation errors to $\frac{1}{2}\rho^{\pi}+ \frac{1}{2}\rho^{\pi^-}$, where $\pi$ is defined in the leftmost column. Alternative numbers 1, 2, 3, 4 denote beach, boat, charter, and pier, respectively. All numbers are truncated to three decimal places. For the greedy algorithm we set the number of iterations to 1000. For the EM algorithm we set the number of random initial points to 5. We optimize over fixed effects from -10 to 10 with a step size of 1.
+\end{scriptsize}
+\end{table}

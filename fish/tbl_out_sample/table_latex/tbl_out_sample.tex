@@ -1,0 +1,42 @@
+% Generated 2026-08-16
+\begin{table}[ht]
+\caption{Out-of-Sample Fit}
+\begin{center}
+\scalebox{0.85}{
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \multirow{2}{*}{Model } &\multicolumn{4}{c|}{Choice probabilities}&\multicolumn{1}{c|}{Prediction error} \\ \cline{2-6}
+ & Beach  & Boat    & Charter  & Pier & \\
+   &  (1) &  (2) & (3) & (4) & (5)\\
+  \hline
+Our method & 0.115 & 0.349 & 0.382 & 0.152 & 0.051 \\
+ & (0.008) & (0.023) & (0.025) & (0.010) & (0.021) \\
+\hline
+Multinomial logit & 0.142 & 0.352 & 0.377 & 0.127 & 0.057 \\
+ & (0.011) & (0.016) & (0.021) & (0.011) & (0.019) \\
+\hline
+Nested logit & 0.115 & 0.350 & 0.382 & 0.152 & 0.049 \\
+(charter and others) & (0.011) & (0.022) & (0.017) & (0.013) & (0.019) \\
+\hline
+Nested logit & 0.142 & 0.352 & 0.377 & 0.127 & 0.057 \\
+(boat and others) & (0.011) & (0.016) & (0.021) & (0.011) & (0.019) \\
+\hline
+Mixed-logit with & 0.143 & 0.352 & 0.377 & 0.127 & 0.057 \\
+log normal distribution & (0.010) & (0.016) & (0.021) & (0.009) & (0.018) \\
+\hline
+Multinomial logit & 0.115 & 0.349 & 0.380 & 0.154 & 0.047 \\
+with fixed effects & (0.013) & (0.019) & (0.021) & (0.019) & (0.022) \\
+\hline
+Mixed-logit with log normal & 0.113 & 0.352 & 0.383 & 0.150 & 0.048 \\
+distribution and fixed effects & (0.007) & (0.014) & (0.017) & (0.010) & (0.016) \\
+\hline
+\end{tabular}
+}
+\end{center}
+\label{tbl:out-sample}
+\begin{tablenotes}
+\item \begin{scriptsize} \textit{Note}:
+Table \ref{tbl:out-sample} summarizes the out-of-sample fit of different models. The row ``our method'' presents choice probabilities predicted by the four-mixture mixed-logit model and the prediction error (\ref{eq:dist.1}). The remaining rows present out-of-sample predicted choice probabilities and prediction errors obtained by standard models. In parentheses are standard deviations obtained by repeating the same analyses 50 times. All numbers are truncated to three decimal places.
+\end{scriptsize}
+\end{tablenotes}
+\end{table}
