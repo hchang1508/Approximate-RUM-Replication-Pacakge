@@ -3,6 +3,8 @@
 Replication package for **"Approximating Choice Data by Discrete Choice Models"**
 (Chang, Narita & Saito).
 
+This package is created with the help of Claude.
+
 The repository is organised **one directory per exhibit**, named after the exhibit's
 LaTeX `\label{}` so that a `grep` in the manuscript and the folder name always agree.
 Each exhibit directory is self-contained: it holds the code that produces the exhibit,
